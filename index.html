@@ -15,18 +15,16 @@
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet" />
 
   <style>
-    
-:root {
-  --black:   #050505;
-  --dark:    #0d0808;
-  --gray:    #161010;
-  --mid:     #2a1818;
-  --muted:   #7b5a5a;
-  --light:   #c9b1b1;
-  --white:   #f5f2f2;
-  --accent:  #9B111E;
-}
-
+    :root {
+      --black:   #080808;
+      --dark:    #111111;
+      --gray:    #1a1a1a;
+      --mid:     #2e2e2e;
+      --muted:   #555555;
+      --light:   #aaaaaa;
+      --white:   #f0f0f0;
+      --accent:  #6B6B6B;
+    }
 
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     html { scroll-behavior: smooth; }
@@ -1476,148 +1474,7 @@
       .sobre-nums { flex-direction: column; gap: 1rem; }
     }
 
-  
-/* ─── CINEMATIC RED REFINEMENT ─── */
-
-body{
-  background:
-    radial-gradient(circle at top left, rgba(155,17,30,.16), transparent 30%),
-    radial-gradient(circle at bottom right, rgba(155,17,30,.08), transparent 35%),
-    var(--black);
-}
-
-body::after{
-  content:'';
-  position:fixed;
-  inset:0;
-  pointer-events:none;
-  background:
-    radial-gradient(circle at center, transparent 60%, rgba(0,0,0,.45));
-  z-index:998;
-}
-
-.hero{
-  position:relative;
-}
-
-.hero::after{
-  content:'';
-  position:absolute;
-  inset:0;
-  background:
-    linear-gradient(to right, rgba(0,0,0,.88), rgba(0,0,0,.18)),
-    radial-gradient(circle at top left, rgba(155,17,30,.22), transparent 35%);
-  z-index:1;
-  pointer-events:none;
-}
-
-.hero-content,
-.marquee-wrap,
-section{
-  position:relative;
-  z-index:2;
-}
-
-.hero-title{
-  text-shadow:0 0 40px rgba(0,0,0,.55);
-}
-
-.hero-sub{
-  color:#d8d0d0;
-}
-
-.hero-kicker,
-.section-eyebrow{
-  color:#c0b0b0;
-}
-
-.hero-bg-text{
-  -webkit-text-stroke:1px rgba(155,17,30,.14);
-}
-
-.nav-cart,
-.btn-main,
-.prod-buy{
-  background:linear-gradient(135deg,#9B111E,#c1121f);
-  color:#fff;
-  border:1px solid rgba(255,255,255,.06);
-}
-
-.nav-cart:hover,
-.btn-main:hover,
-.prod-buy:hover{
-  background:linear-gradient(135deg,#c1121f,#9B111E);
-  transform:translateY(-3px);
-  box-shadow:0 0 35px rgba(155,17,30,.35);
-}
-
-.btn-outline{
-  border-color:rgba(155,17,30,.6);
-  color:#fff;
-}
-
-.hero-card,
-.prod-card,
-.arq-item,
-.custom-card,
-.sobre-big-card{
-  box-shadow:0 15px 50px rgba(0,0,0,.28);
-  transition:all .45s cubic-bezier(.22,1,.36,1);
-}
-
-.hero-card:hover,
-.prod-card:hover,
-.custom-card:hover,
-.arq-item:hover{
-  transform:translateY(-8px);
-  box-shadow:0 25px 70px rgba(155,17,30,.18);
-}
-
-.prod-img img,
-.arq-item img,
-.custom-card img{
-  transition:transform .8s ease, filter .6s ease;
-}
-
-.prod-card:hover img,
-.arq-item:hover img,
-.custom-card:hover img{
-  transform:scale(1.04);
-}
-
-.contato{
-  background:linear-gradient(135deg,#200909,#4a0f15);
-}
-
-footer{
-  background:#050505;
-}
-
-.marquee-item.hi{
-  color:#ff7b86;
-}
-
-/* smoother cinematic feel */
-.hero-card,
-.prod-card,
-.custom-card,
-.arq-item{
-  overflow:hidden;
-  backdrop-filter:blur(2px);
-}
-
-/* mobile refinement */
-@media(max-width:768px){
-  .hero-title{
-    font-size:clamp(3rem,12vw,5rem);
-  }
-
-  .hero-sub{
-    font-size:.9rem;
-  }
-}
-
-</style>
+  </style>
 </head>
 <body>
 
@@ -1633,7 +1490,7 @@ footer{
     </ul>
     <div class="nav-right">
       <span class="nav-tag">By Suphenki</span>
-      <a href="https://wa.me/5511951983247" target="_blank" class="nav-cart" style="text-decoration:none;display:inline-block;">Explore Pieces</a>
+      <a href="https://wa.me/5511951983247" target="_blank" class="nav-cart" style="text-decoration:none;display:inline-block;">Shop now</a>
     </div>
     <div class="nav-hamburger" id="hamburger" onclick="openMobileNav()">
       <span></span><span></span><span></span>
@@ -1648,7 +1505,7 @@ footer{
     <a href="#custom" onclick="closeMobileNav()">Custom</a>
     <a href="#sobre-mim" onclick="closeMobileNav()">About</a>
     <a href="#contato" onclick="closeMobileNav()">Contato</a>
-    <a href="https://wa.me/5511951983247" target="_blank" class="nav-cart" style="margin-top:1rem;text-decoration:none;">Explore Pieces</a>
+    <a href="https://wa.me/5511951983247" target="_blank" class="nav-cart" style="margin-top:1rem;text-decoration:none;">Shop now</a>
   </nav>
 
   <!-- HERO -->
@@ -1664,12 +1521,12 @@ footer{
           HAND
         </h1>
         <p class="hero-sub">
-          <span class="hero-sub-tagline">Única. Do começo ao fim.</span><br><br>
+          <span class="hero-sub-tagline">My art, my rules. Hope you like it.</span><br><br>
           Bags, bolsas e bonés costurados à mão por Henrique — o Suphenki.<br>
           Arte autoral em cada peça.
         </p>
         <div class="hero-actions">
-          <button class="btn-main" onclick="document.getElementById('produtos').scrollIntoView({behavior:'smooth'})">Enter The Drop</button>
+          <button class="btn-main" onclick="document.getElementById('produtos').scrollIntoView({behavior:'smooth'})">Ver coleção</button>
           <a href="https://wa.me/5511951983247" target="_blank" class="btn-outline" style="text-decoration:none;">WhatsApp ↗</a>
         </div>
       </div>
@@ -2249,28 +2106,6 @@ footer{
       document.getElementById('tab-' + name).classList.add('active');
     }
   </script>
-
-
-<script>
-document.querySelectorAll('.prod-card,.hero-card,.custom-card').forEach(card=>{
-  card.addEventListener('mousemove',e=>{
-    const rect = card.getBoundingClientRect();
-    const x = e.clientX - rect.left;
-    const y = e.clientY - rect.top;
-
-    card.style.transform = `
-      perspective(1000px)
-      rotateX(${(y - rect.height/2)/25}deg)
-      rotateY(${-(x - rect.width/2)/25}deg)
-      translateY(-6px)
-    `;
-  });
-
-  card.addEventListener('mouseleave',()=>{
-    card.style.transform='';
-  });
-});
-</script>
 
 </body>
 </html>
